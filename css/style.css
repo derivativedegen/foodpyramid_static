@@ -43,10 +43,12 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
+  width: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+/*  -ms-overflow-style: scrollbar; */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
 
 @-ms-viewport {
   width: device-width; }
@@ -72,7 +74,10 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #000; }
+  background-color: #000; 
+  height: 100%;
+  overflow: auto; 
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -7479,7 +7484,7 @@ h1, h2, h3, h4, h5,
       -webkit-transition: all 0.7s ease;
       -ms-transition: all 0.7s ease;
       transition: all 0.7s ease;
-      opacity: 0; }
+      opacity: 100; }
       .owl-carousel .owl-nav .owl-prev span:before,
       .owl-carousel .owl-nav .owl-next span:before {
         font-size: 40px; }
@@ -7499,7 +7504,7 @@ h1, h2, h3, h4, h5,
         background: #78d5ef; }
   .owl-carousel:hover .owl-nav .owl-prev,
   .owl-carousel:hover .owl-nav .owl-next {
-    opacity: 1; }
+    opacity: 100; }
   .owl-carousel:hover .owl-nav .owl-prev {
     left: -20px; }
   .owl-carousel:hover .owl-nav .owl-next {
@@ -7614,7 +7619,7 @@ h1, h2, h3, h4, h5,
     color: #fff; }
   .home-slider:hover .owl-nav .owl-prev,
   .home-slider:hover .owl-nav .owl-next {
-    opacity: 1; }
+    opacity: 100; }
   .home-slider:hover .owl-nav .owl-prev {
     left: 20px; }
   .home-slider:hover .owl-nav .owl-next {
@@ -8636,7 +8641,7 @@ textarea.form-control {
     .block-4 .nonloop .owl-nav .owl-prev:hover, .block-4 .nonloop .owl-nav .owl-next:hover {
       opacity: 1; }
     .block-4 .nonloop .owl-nav .owl-prev.disabled, .block-4 .nonloop .owl-nav .owl-next.disabled {
-      display: none; }
+      display: hidden; }
     .block-4 .nonloop .owl-nav .owl-prev span, .block-4 .nonloop .owl-nav .owl-next span {
       font-size: 30px; }
   .block-4 .nonloop .owl-nav .owl-prev {
@@ -8736,6 +8741,11 @@ textarea.form-control {
 
 .roadmap {
   border: 5px solid #FFF;
+  width: 90%;
+}
+
+.roadmap-container {
+  width: 100%;
 }
 
 /* Blog*/
