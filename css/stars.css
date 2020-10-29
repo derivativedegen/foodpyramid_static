@@ -1,5 +1,7 @@
 .stars-header {
-  background: radial-gradient(ellipse at bottom, #000 0%, #000 100%);
+  background: #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(25%,#30213c), color-stop(75%,#4d1f36), color-stop(100%, #30213c));
+  /* background: radial-gradient(ellipse at bottom, #682b49 0%, #30213c 100%); */
   overflow: hidden;
 }
 
